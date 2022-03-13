@@ -12,178 +12,296 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 
 <body>
+    <div id="app">
 
-    <!-- ======= Hero Section ======= -->
-    <main id="hero">
-        <div class="container-fluid">
-            <div class="justify-content-center text-center">
-                <div class="row py-3">
-                    <div class="col ">
+        <!-- ======= Hero Section ======= -->
+        <main id="hero">
+            <div class="container-fluid">
+
+                <!-- Title -->
+                <div class="row pt-3 justify-content-center text-center">
+                    <div class="col-xxl-8 col-lg-8 col-md-10">
                         <h1>PPL Workout Generator</h1>
                         <hr>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <h4>The purpose of this web app is to generate a daily workout for someone
-                            following what's known as a Push/Pull/Legs (PPL) split. According to Men's Health, PPL is a
-                            full-body training
-                            split that's designed to build muscle in almost every single muscle group by following a
-                            simple format: on a
-                            certain day of the week, you only train either upper-body pushing muscles (push), upper-body
-                            pulling muscles
-                            (pull), or your entire lower-body (legs). A common weekly schedule might look something like
-                            this: <br>
-                        </h4>
-                        <table class="table table-striped table-responsive">
-                            <thead>
-                                <tr>
 
-                                    <th scope="col"></th>
-                                    <th scope="col">Monday</th>
-                                    <th scope="col">Tuesday</th>
-                                    <th scope="col">Wednesday</th>
-                                    <th scope="col">Thursday</th>
-                                    <th scope="col">Friday</th>
-                                    <th scope="col">Saturday</th>
-                                    <th scope="col">Sunday</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Week 1:</th>
-                                    <td>Push</td>
-                                    <td>Pull</td>
-                                    <td>Legs</td>
-                                    <td>Rest</td>
-                                    <td>Push</td>
-                                    <td>Pull</td>
-                                    <td>Legs</td>
-                                </tr>
+                <!-- Intro/Description of PPL -->
+                <div class="row justify-content-center p-1">
+                    <div class="col-xxl-10 col-lg-8 col-md-10">
+                        <div class="card m-1 p-2">
+                            <h4>The purpose of this web app is to generate a daily workout for someone
+                                following what's known as a Push/Pull/Legs (PPL) split. According to Men's Health,
+                                PPL is a full-body training split that's designed to build muscle in almost every single
+                                muscle group by
+                                following a simple format: on a certain day of the week, you only train either
+                                upper-body pushing
+                                muscles (push), upper-body pulling muscles (pull), or your entire lower-body (legs). A
+                                common weekly
+                                schedule might look something like this: <br>
+                            </h4>
+                        </div>
 
-                                <tr>
-                                    <th scope="row">Week 2:</th>
-                                    <td>Rest</td>
-                                    <td>Push</td>
-                                    <td>Rest</td>
-                                    <td>Pull</td>
-                                    <td>Legs</td>
-                                    <td>Rest</td>
-                                    <td>Push</td>
-                                </tr>
+                    </div>
+                    <!-- Custom table in bootstrap for better responsive design compared to traditional table -->
+                    <!-- <div class="row justify-content-center p-1">
+                        <div class="col-xxl-10 col-lg-8 col-md-10">
+                            <div class="custom-table">
 
-                            </tbody>
-                        </table>
-                        <hr>
+                                <div class="row header-row ">
+
+                                    <div class="col">
+
+                                    </div>
+
+                                    <div class="col">
+                                        Monday
+                                    </div>
+
+                                    <div class="col">
+                                        Tuesday
+                                    </div>
+
+                                    <div class="col">
+                                        Wednesday
+                                    </div>
+
+                                    <div class="col">
+                                        Thursday
+                                    </div>
+
+                                    <div class="col">
+                                        Friday
+                                    </div>
+
+                                    <div class="col">
+                                        Saturday
+                                    </div>
+
+                                    <div class="col">
+                                        Sunday
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row weekly-rows border-4 ">
+
+                                   
+                                    <div class="col">
+                                        Week 1:
+                                    </div>
+
+                                    <div class="col">
+                                        Monday
+                                    </div>
+
+                                    <div class="col">
+                                        Tuesday
+                                    </div>
+
+                                    <div class="col">
+                                        Wednesday
+                                    </div>
+
+                                    <div class="col">
+                                        Thursday
+                                    </div>
+
+                                    <div class="col">
+                                        Friday
+                                    </div>
+
+                                    <div class="col">
+                                        Saturday
+                                    </div>
+
+                                    <div class="col">
+                                        Sunday
+                                    </div>
+
+
+
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+                    <!-- Table of example PPL -->
+                    <div class="row pt-3 justify-content-center text-center">
+                        <div class="col-xxl-8 col-lg-8 col-md-10">
+                            <table class="table table-striped table-responsive col-xxl-8 col-lg-8 col-md-10">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Monday</th>
+                                        <th scope="col">Tuesday</th>
+                                        <th scope="col">Wednesday</th>
+                                        <th scope="col">Thursday</th>
+                                        <th scope="col">Friday</th>
+                                        <th scope="col">Saturday</th>
+                                        <th scope="col">Sunday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Week 1:</th>
+                                        <td>Push</td>
+                                        <td>Pull</td>
+                                        <td>Legs</td>
+                                        <td>Rest</td>
+                                        <td>Push</td>
+                                        <td>Pull</td>
+                                        <td>Legs</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">Week 2:</th>
+                                        <td>Rest</td>
+                                        <td>Push</td>
+                                        <td>Rest</td>
+                                        <td>Pull</td>
+                                        <td>Legs</td>
+                                        <td>Rest</td>
+                                        <td>Push</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row pt-3 justify-content-center text-center">
+                <div class="col-xxl-8 col-lg-8 col-md-10">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Push -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPush">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePush" aria-expanded="false" aria-controls="collapsePush">
+                                    Push
+                                </button>
+                            </h2>
+                            <div id="collapsePush" class="accordion-collapse collapse" aria-labelledby="headingPush"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Muscle groups being targeted: Chest, front delts, and triceps.
+                                    </p>
+                                    <button class="btn btn-block btn-outline-primary">Generate Push Workout</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pull -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPull">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePull" aria-expanded="false" aria-controls="collapsePull">
+                                    Pull
+                                </button>
+                            </h2>
+                            <div id="collapsePull" class="accordion-collapse collapse" aria-labelledby="headingPull"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Muscle groups being targeted: Back, traps, and biceps.
+                                    </p>
+                                    <button class="btn btn-block btn-outline-primary">Generate Pull Workout</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Legs -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingLegs">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseLegs" aria-expanded="false" aria-controls="collapseLegs">
+                                    Legs
+                                </button>
+                            </h2>
+                            <div id="collapseLegs" class="accordion-collapse collapse" aria-labelledby="headingLegs"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Muscle groups being targeted: Legs, calves.
+                                    </p>
+                                    <button class="btn btn-block btn-outline-primary">Generate Legs Workout</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Core -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCore">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCore" aria-expanded="false" aria-controls="collapseCore">
+                                    Core
+                                </button>
+                            </h2>
+                            <div id="collapseCore" class="accordion-collapse collapse" aria-labelledby="headingCore"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Abdominal muscles are resilient, and respond well to more frequent training.
+                                    </p>
+                                    <button class="btn btn-block btn-outline-primary">Generate Core Workout</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cardio -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCardio">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCardio" aria-expanded="false"
+                                    aria-controls="collapseCardio">
+                                    Cardio
+                                </button>
+                            </h2>
+                            <div id="collapseCardio" class="accordion-collapse collapse" aria-labelledby="headingCardio"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Cardio can vary from simple walks to rigorous hiking.
+                                    </p>
+                                    <button class="btn btn-block btn-outline-primary">Generate Core Workout</button>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row pt-3">
-            <div class="col">
-                <div class="accordion" id="accordionExample">
-                    <!-- Push -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingPush">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePush" aria-expanded="false" aria-controls="collapsePush">
-                                Push
-                            </button>
-                        </h2>
-                        <div id="collapsePush" class="accordion-collapse collapse" aria-labelledby="headingPush"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p> Muscle groups being targeted: Chest, front delts, and triceps.                                   
-                                </p>
-                                <button class="btn btn-block btn-outline-primary">Generate Push Workout</button>
 
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pull -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingPull">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePull" aria-expanded="false" aria-controls="collapsePull">
-                                Pull
-                            </button>
-                        </h2>
-                        <div id="collapsePull" class="accordion-collapse collapse" aria-labelledby="headingPull"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p> Muscle groups being targeted: Back, traps, and biceps.                                   
-                                </p>
-                                <button class="btn btn-block btn-outline-primary">Generate Pull Workout</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Legs -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingLegs">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseLegs" aria-expanded="false" aria-controls="collapseLegs">
-                                Legs
-                            </button>
-                        </h2>
-                        <div id="collapseLegs" class="accordion-collapse collapse" aria-labelledby="headingLegs"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p> Muscle groups being targeted: Legs, calves.                                   
-                                </p>
-                                <button class="btn btn-block btn-outline-primary">Generate Legs Workout</button>
+        </main>
 
-                            </div>
-                        </div>
-                    </div>
+    </div>
 
-                     <!-- Core -->
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingCore">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseCore" aria-expanded="false" aria-controls="collapseCore">
-                                Core
-                            </button>
-                        </h2>
-                        <div id="collapseCore" class="accordion-collapse collapse" aria-labelledby="headingCore"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p> Abdominal muscles are resilient, and respond well to more frequent training.                                 
-                                </p>
-                                <button class="btn btn-block btn-outline-primary">Generate Core Workout</button>
-
-                            </div>
-                        </div>
-                    </div>
-                     <!-- Cardio -->
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingCardio">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseCardio" aria-expanded="false" aria-controls="collapseCardio">
-                                Cardio
-                            </button>
-                        </h2>
-                        <div id="collapseCardio" class="accordion-collapse collapse" aria-labelledby="headingCardio"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p> Cardio can vary from simple walks to rigorous hiking.                                   
-                                </p>
-                                <button class="btn btn-block btn-outline-primary">Generate Core Workout</button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-        </script>
+    </script>
+
+
+
+    <!-- Push JS -->
+    <!-- <script src="/assets/js/push.js"></script> -->
+
+    <!-- Main Vue JS -->
+    <script src="/assets/js/main.js"></script>
+
 </body>
 
 </html>
