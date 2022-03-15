@@ -1,18 +1,22 @@
-// Vue.component('', {
-//     template: `
-//     `
-// })
-
 new Vue({
     el: '#app',
     data: {
-        quotes,
-        currentQuote: quotes[0]
+        pushExercises,
+        pushWorkout,
+        flatDBChestPress,
+
+        //currentWorkout,
+        //generalPushWorkout: quotes[0]
     },
     methods: {
-        generateRandomQuote: function() {
-            const randomIndexOfQuotes = Math.floor(Math.random() * quotes.length)
-            this.currentQuote = quotes[randomIndexOfQuotes]
+         testingCallingDataFromPushJS: function() {
+             this.flatDBChestPress = pushExercises.chest[0].exerciseName;
+
+            //  const randomIndexOfPushExercises = 
+            //  Math.floor(Math.random() * pushExercises.chest.exerciseName);
+            //  console.log(randomIndexOfPushExercises);
+
+            //  this.currentWorkout = pushExercises[randomIndexOfQuotes];
         }
     }
 })

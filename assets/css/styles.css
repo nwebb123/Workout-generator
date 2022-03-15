@@ -20,6 +20,12 @@ body {
     height: 100vh;
 }
 
+.custom-primary-bg {
+    /* background-color: #e7f1ff; */
+    background-color: #276fe4;
+}
+
+
 
 @media (min-width: 1px) {
 
@@ -31,9 +37,9 @@ body {
         font-size: 1rem;
     }
 
-    p {
+    /* p {
         font-size: .5rem;
-    }
+    } */
 
     /*1rem = 16px*/
 }
@@ -48,9 +54,9 @@ body {
         font-size: 1.2rem;
     }
 
-    p {
+    /* p {
         font-size: 1rem;
-    }
+    } */
 
     /*1rem = 16px*/
 }
@@ -65,9 +71,9 @@ body {
         font-size: 1.5rem;
     }
 
-    p {
+    /* p {
         font-size: 1.5rem;
-    }
+    } */
 
     /*1rem = 16px*/
 }
@@ -82,9 +88,9 @@ body {
         font-size: 1.5rem;
     }
 
-    p {
+    /* p {
         font-size: 1.8rem;
-    }
+    } */
 
     /*1rem = 16px*/
 
@@ -101,9 +107,9 @@ body {
         font-size: 1.5rem;
     }
 
-    p {
+    /* p {
         font-size: 2rem;
-    }
+    } */
 
     /*1rem = 16px*/
 }
@@ -118,9 +124,9 @@ body {
         font-size: 1.5rem;
     }
 
-    p {
+    /* p {
         font-size: 2.5rem;
-    }
+    } */
 
     /*1rem = 16px*/
 
