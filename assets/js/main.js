@@ -4,6 +4,7 @@ new Vue({
         pushExercises,
         pushWorkout,
         flatDBChestPress,
+        title: 'PPL Workout Generator',
 
         //currentWorkout,
         //generalPushWorkout: quotes[0]
