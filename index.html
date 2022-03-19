@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Workout Gen</title>
+    <title>Workout Generator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -145,7 +145,7 @@
                                     <div class="accordion-body">
                                         <p> Muscle groups being targeted: Chest, front delts, and triceps.
                                         </p>
-                                        <button v-on:click="displayPushExercisesTable = !displayPushExercisesTable"
+                                        <button @click="generateRandomChestExercise" v-on:click="displayPushExercisesTable = !displayPushExercisesTable"
                                             class="btn btn-block btn-outline-primary">
                                             Generate Push Workout
                                          </button><!--@click="testingCallingDataFromPushJS" -->
@@ -163,42 +163,32 @@
                                             <table class="table table-bordered table-hover">
                                                 <thead class="thead-dark">
                                                     <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">First</th>
-                                                        <th scope="col">Last</th>
-                                                        <th scope="col">Handle</th>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Exercise</th>
+                                                        <!-- <th scope="col">Sets</th>
+                                                        <th scope="col">Reps</th> -->
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
+                                                        <td>{{randomChestExercise1}}</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
+                                                        <td>{{randomChestExercise2}}</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
+                                                        <td>{{randomChestExercise3}}</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">4</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
+                                                        <td>{{randomChestExercise4}}</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">5</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
+                                                        <td>{{randomChestExercise5}}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

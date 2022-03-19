@@ -73,9 +73,17 @@ const pushExercises = {
     ]
 }
 
-let randomPushExerciseName = pushExercises.chest[0].exerciseName;
+//let randomPushExerciseName = pushExercises.chest[0].exerciseName;
 
+const arrayOfChestExercises = ['Flat DB Chest Press', 'Incline DB Chest Press', 'Decline DB Chest Press', 'Machine Pec Fly'];
 
+let nameOfFirstChestExercise;
+
+let randomChestExercise1;
+let randomChestExercise2;
+let randomChestExercise3;
+let randomChestExercise4;
+let randomChestExercise5;
 
 // console.log();
 
