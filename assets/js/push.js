@@ -75,15 +75,22 @@ const pushExercises = {
 
 //let randomPushExerciseName = pushExercises.chest[0].exerciseName;
 
-const arrayOfChestExercises = ['Flat DB Chest Press', 'Incline DB Chest Press', 'Decline DB Chest Press', 'Machine Pec Fly'];
+
+//Initializing Variables to call from main.js
+const arrayOfChestExercises = ['Flat DB Chest Press', 'Incline DB Chest Press', 'Decline DB Chest Press', 'Machine Pec Fly','Cable Crossover','Push ups'];
+
+const arrayOfTricepExercises = [ 'Dips','Rope Pull-down','Machine Tricep Push-down'];
 
 let nameOfFirstChestExercise;
 
 let randomChestExercise1;
 let randomChestExercise2;
 let randomChestExercise3;
-let randomChestExercise4;
-let randomChestExercise5;
 
-// console.log();
+let randomTricepExercise1;
+let randomTricepExercise2;
+let randomTricepExercise3;
+
+
+
 
