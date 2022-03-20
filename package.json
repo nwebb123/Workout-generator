@@ -1,0 +1,19 @@
+{
+  "name": "workout-generator",
+  "version": "1.0.0",
+  "description": "Generate Workouts based on preferred workout split",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwebb123/Workout-generator.git"
+  },
+  "author": "Nick Webb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwebb123/Workout-generator/issues"
+  },
+  "homepage": "https://github.com/nwebb123/Workout-generator#readme"
+}

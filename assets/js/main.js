@@ -3,8 +3,10 @@ new Vue({
     data: {
 
         title: 'PPL Workout Generator',
+
+        //Push Section
         displayPushExercisesTable: false,
-        nameOfFirstChestExercise: pushExercises.chest[0].exerciseName,
+
         randomChestExercise1,
         randomChestExercise2,
         randomChestExercise3,
@@ -13,35 +15,82 @@ new Vue({
         randomTricepExercise2,
         randomTricepExercise3,
 
-        //currentWorkout,
-        //generalPushWorkout: quotes[0]
+        //Pull Section
+        displayPullExercisesTable: false,
+
+        randomBackExercise1,
+        randomBackExercise2,
+        randomBackExercise3,
+
+        randomBicepsExercise1,
+        randomBicepsExercise2,
+        randomBicepsExercise3,
+
+
+        //Legs Section
+        displayLegsExercisesTable: false,
+
+        randomLegExercise1,
+        randomLegExercise2,
+        randomLegExercise3,
+        randomLegExercise4,
+        randomLegExercise5,
+
+        //Core
+        displayCoreExercisesTable: false,
+
+
+
+        //Cardio
+        displayCardioExercisesTable: false,
+
+
     },
     methods: {
-        generateRandomChestExercise: function () {
-            //Method used to populate list in Push section. Pro's: List populates w/ a random exercise. Cons: List can have duplicates, need to pull from an array and after each pull, take an item away from the array
+        generatePushDayWorkout: function () {
+            const shuffledArrayOfChestExercises = _.shuffle(pushExercises.chest);
+            const shuffledArrayOfTricepExercises = _.shuffle(pushExercises.triceps);
 
-            let randomIndexForChestExercise1 = Math.floor(Math.random() * arrayOfChestExercises.length);
-            let randomIndexForChestExercise2 = Math.floor(Math.random() * arrayOfChestExercises.length);
-            let randomIndexForChestExercise3 = Math.floor(Math.random() * arrayOfChestExercises.length);
+            this.randomChestExercise1 = shuffledArrayOfChestExercises[0].exerciseName;
+            this.randomChestExercise2 = shuffledArrayOfChestExercises[1].exerciseName;
+            this.randomChestExercise3 = shuffledArrayOfChestExercises[2].exerciseName;
 
-            let randomIndexForTricepExercise1 = Math.floor(Math.random() * arrayOfTricepExercises.length);
-            let randomIndexForTricepExercise2 = Math.floor(Math.random() * arrayOfTricepExercises.length);
-            let randomIndexForTricepExercise3 = Math.floor(Math.random() * arrayOfTricepExercises.length);
+            this.randomTricepExercise1 = shuffledArrayOfTricepExercises[0].exerciseName;
+            this.randomTricepExercise2 = shuffledArrayOfTricepExercises[1].exerciseName;
+            this.randomTricepExercise3 = shuffledArrayOfTricepExercises[2].exerciseName;
 
-            this.randomChestExercise1 = arrayOfChestExercises[randomIndexForChestExercise1];
-            this.randomChestExercise2 = arrayOfChestExercises[randomIndexForChestExercise2];
-            this.randomChestExercise3 = arrayOfChestExercises[randomIndexForChestExercise3];
+        },
+        generatePullDayWorkout: function () {
+            const shuffledArrayOfBackExercises = _.shuffle(pullExercises.back);
+            const shuffledArrayOfBicepsExercises = _.shuffle(pullExercises.biceps);
 
-            this.randomTricepExercise1 = arrayOfTricepExercises[randomIndexForTricepExercise1];
-            this.randomTricepExercise2 = arrayOfTricepExercises[randomIndexForTricepExercise2];
-            this.randomTricepExercise3 = arrayOfTricepExercises[randomIndexForTricepExercise3];
+            this.randomBackExercise1 = shuffledArrayOfBackExercises[0].exerciseName;
+            this.randomBackExercise2 = shuffledArrayOfBackExercises[1].exerciseName;
+            this.randomBackExercise3 = shuffledArrayOfBackExercises[2].exerciseName;
 
-        }
+            this.randomBicepsExercise1 = shuffledArrayOfBicepsExercises[0].exerciseName;
+            this.randomBicepsExercise2 = shuffledArrayOfBicepsExercises[1].exerciseName;
+            this.randomBicepsExercise3 = shuffledArrayOfBicepsExercises[2].exerciseName;
+
+        },
+
+        generateLegDayWorkout: function () {
+            const shuffledArrayOfLegExercises = _.shuffle(legExercises.legs);
+
+            this.randomLegExercise1 = shuffledArrayOfLegExercises[0].exerciseName;
+            this.randomLegExercise2 = shuffledArrayOfLegExercises[1].exerciseName;
+            this.randomLegExercise3 = shuffledArrayOfLegExercises[2].exerciseName;
+            this.randomLegExercise4 = shuffledArrayOfLegExercises[3].exerciseName;
+            this.randomLegExercise5 = shuffledArrayOfLegExercises[4].exerciseName;
+
+        },
     }
 })
 
-// let copyOfArrayOfChestExercises = arrayOfChestExercises.map();
-// console.log(copyOfArrayOfChestExercises);
+
+
+
+
 
 
 
@@ -55,17 +104,12 @@ new Vue({
 //     console.log(exercise);
 // }
 
-//let nameOfFirstChestExercise = pushExercises.chest[0].exerciseName;
 
 
-// console.log(pushExercises.chest[0].exerciseName);
 
 
-/*Method below generates js object of each exercise inside of the Chest musclegroup.
-Need to further develop this to capture a random object and return it's name, sets, etc to front-end
-*/
+
 
 
 //CoffeeHouse Coders, Wednesdays @ 7 Once a month.
 //Ypsi Software Development Rubber Duck Logo
-
