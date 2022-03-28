@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nwebb123/Workout-generator/issues"
   },
-  "homepage": "https://github.com/nwebb123/Workout-generator#readme"
+  "homepage": "https://github.com/nwebb123/Workout-generator#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

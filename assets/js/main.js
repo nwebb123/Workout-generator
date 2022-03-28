@@ -1,3 +1,5 @@
+
+//"Main" Vue app, need to break this down into components
 new Vue({
     el: '#app',
     data: {
@@ -88,7 +90,7 @@ new Vue({
 })
 
 
-
+//Accordion functionality
 var acc = document.getElementsByClassName("custom-accordion");
 var i;
 
